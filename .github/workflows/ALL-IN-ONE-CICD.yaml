@@ -4,9 +4,22 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: "Environment to deploy (test-load, dev-unicef, redcross, aidlink-demo, aidlink-dev, main-aa)"
+        description: "Environment to deploy"
         required: true
-        type: string
+        type: choice
+        options:
+          - "test-load"
+          - "dev-unicef"
+          - "redcross"
+          - "aidlink-demo"
+          - "aidlink-dev"
+          - "stage-el"
+          - "main-aa"
+          - "aa-mcn-main"
+          - "aa-demo-v2"
+          - "dev-crm"
+          - "dev"
+          - "main"
 
       apps_to_build:
         description: "Apps to build (leave empty for defaults)"
@@ -73,7 +86,32 @@ jobs:
               SECRET="ENV_AA_STAGE_EL"
               APPS="beneficiary,rahat"
               ;;
-            main|main-aa)
+            main-aa)
+              TAG="latest"
+              SECRET="ENV_AA_MAIN"
+              APPS="beneficiary,rahat"
+              ;;
+            aa-mcn-main)
+              TAG="aa-mcn-main"
+              SECRET="ENV_AA_MCN_MAIN"
+              APPS="beneficiary,rahat"
+              ;;
+            aa-demo-v2)
+              TAG="aa-demo-v2"
+              SECRET="ENV_AA_DEMO_V2"
+              APPS="beneficiary,rahat"
+              ;;
+            dev-crm)
+              TAG="dev-crm"
+              SECRET="ENV_AA_DEV_CRM"
+              APPS="beneficiary,rahat"
+              ;;
+            dev)
+              TAG="dev"
+              SECRET="ENV_AA_DEV"
+              APPS="beneficiary,rahat"
+              ;;
+            main)
               TAG="latest"
               SECRET="ENV_AA_MAIN"
               APPS="beneficiary,rahat"
