@@ -15,7 +15,7 @@ on:
           - "aa-stage"
           - "ct-stage"
           - "Cambodia-Stage"
-          - "Cambodia-Prod-Replicate"
+          - "cambodia-prod-replicate"
           - "OffRamp-Stage"
           - "stage-sms-voucher"
           - "wsd-stage"
@@ -64,7 +64,7 @@ jobs:
               BASE="K8s-Manifest/Rahat/CT-Stage/Argo-Rollout" ;;
             Cambodia-Stage)
               BASE="K8s-Manifest/Rahat/Cambodia-Stage/Argo-Rollout" ;;
-            Cambodia-Prod-Replicate)
+            cambodia-prod-replicate)
               BASE="K8s-Manifest/Rahat/Cambodia-Prod-Replicate/Argo-Rollout" ;;
             OffRamp-Stage)
               BASE="K8s-Manifest/Rahat/OffRamp-Stage/Argo-Rollout" ;;
