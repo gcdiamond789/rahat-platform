@@ -12,7 +12,7 @@ on:
           - "dev-unicef"
           - "demo-redcross"
           - "demo-aidlink"
-          - "aidlink-dev"
+          - "dev-aidlink"
           - "stage-el"
           - "main-aa"
           - "aa-mcn-main"
@@ -67,18 +67,18 @@ jobs:
               SECRET="ENV_AA_DEV_UNICEF"
               APPS="beneficiary,rahat"
               ;;
-            redcross)
+            demo-redcross)
               TAG="demo-redcross"
               SECRET="ENV_AA_REDCROSS"
               APPS="beneficiary,rahat"
               ;;
-            aidlink-demo)
+            demo-aidlink)
               TAG="demo-aidlink"
               SECRET="ENV_AA_AIDLINK_DEMO"
               APPS="beneficiary,rahat"
               ;;
-            aidlink-dev)
-              TAG="aidlink-dev"
+            dev-aidlink)
+              TAG="dev-aidlink"
               SECRET="ENV_AA_AIDLINK_DEV"
               APPS="beneficiary,rahat"
               ;;
