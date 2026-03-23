@@ -11,7 +11,7 @@ on:
           - "test-load"
           - "dev-unicef"
           - "demo-redcross"
-          - "aidlink-demo"
+          - "demo-aidlink"
           - "aidlink-dev"
           - "stage-el"
           - "main-aa"
@@ -73,7 +73,7 @@ jobs:
               APPS="beneficiary,rahat"
               ;;
             aidlink-demo)
-              TAG="aidlink-demo"
+              TAG="demo-aidlink"
               SECRET="ENV_AA_AIDLINK_DEMO"
               APPS="beneficiary,rahat"
               ;;
