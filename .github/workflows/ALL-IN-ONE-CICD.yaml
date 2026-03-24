@@ -1,4 +1,4 @@
-name: AA ALL DEV CI/CD
+name: ALL DEV CI/CD
 
 on:
   workflow_dispatch:
