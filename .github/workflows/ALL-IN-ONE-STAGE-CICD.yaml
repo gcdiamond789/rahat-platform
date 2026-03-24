@@ -1,4 +1,4 @@
-name: AA ALL STAGE CI/CD
+name: ALL STAGE CI/CD
 
 on:
   workflow_dispatch:
