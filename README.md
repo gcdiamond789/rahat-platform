@@ -11,7 +11,7 @@ The core repository serves as the foundational codebase for managing and deployi
 
 - **Applications (apps/)**: Contains the various applications, each with its own configuration and source code. For example, the `beneficiary` application includes specific services, controllers, and modules necessary for its functionality.
 - **Libraries (libs/)**: Shared libraries that can be utilized by multiple applications to promote code reuse and consistency.
-- **Prisma (prisma/)**: Manages database migrations and schema definitions, ensuring data integrity and ease of database management.
+- **Prisma (prisma/)**: Manages database migrations, schema definitions, and seed scripts for initial data setup. See the [Prisma Seed Scripts guide](docs/prisma-seed-scripts.md) for documentation on every seed script.
 - **Tools (tools/)**: Scripts and configurations for development tools, such as Docker compose files and utility scripts for setting up and managing the development environment.
   - **docker-compose/**: Contains Docker Compose configurations for setting up various development environments.
     - **dev-tools/**: Configuration files and scripts for setting up development tools using Docker Compose.
@@ -104,3 +104,9 @@ Before you begin, ensure your system has the following dependencies installed:
    You can explore the API documentation at: [http://localhost:5501/swagger](http://localhost:5501/swagger)
 
 Explore the functionalities provided by the Rahat Platform locally. If you encounter any issues, refer to the troubleshooting section within the documentation or contact the project maintainers for assistance.
+
+## Database Seed Scripts
+
+The `prisma/` directory contains seed and utility scripts for populating initial settings, dev credentials, and dashboard data sources. Refer to the full reference guide for usage of each script:
+
+- [Prisma Seed Scripts](docs/prisma-seed-scripts.md)
